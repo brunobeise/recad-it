@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+* {
+    transition: all 300ms ease-out;
+    font-family: Fuzzy Bubbles;
+    font-size: 20px;
+}
+
+#nav {
+    display: flex;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    opacity: 0.98;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 58px;
+}
+
+#nav > i {
+    font-size: calc(20px + 3vw);
+    color: white
+}
+
+#nav > i:hover {
+    color: rgb(230, 56, 230);
+    cursor: pointer;
+
+}
+
+.dn{
+    display: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    overflow-x: hidden;
+}
+
+body > img {
+    filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+#containerlogin {
+    align-items: center;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.947);;
+    border-radius: 10px;
+    opacity: 0.98;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 5px 15px;;
+}
+
+#loginfoto, #loginform {
+    text-align: center;
+}
+
+#loginfoto > img {
+    width: 90%;
+}
+
+.formlogin {
+    
+    font-size: 50px;
+}
+
+
+input{
+    width: 90%;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+input:hover {
+    border: 1px solid cornflowerblue;;
+}
+
+.criarconta {
+    width: 30%;
+    min-width: 150px;
+    background-color: cornflowerblue;
+    color: white;
+    border: white;
+}
+
+.criarconta:hover {
+    background-color: rgb(230, 56, 230);
+    cursor: pointer;
+}
+
+a {
+    color: cornflowerblue;
+    font-size: 15px;
+    
+}
+
+.hoverrosa:hover {
+    color: rgb(230, 56, 230);
+}
+
+
+#background {
+    background-repeat: repeat;
+    background-size: cover;
+    border: 4px solid cornflowerblue;
+    height: 100%;
+}
+
+#containerrecados {
+    height: 100%;
+    padding-top: 500px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recado {
+    padding: 15px;
+    width: 210px;
+    height: 210px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.recado > img {
+    width: 210px;
+    position: absolute;
+}
+
+.recado:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+    filter: brightness(1.05);
+}
+
+.recadocontent {
+    font-size: 60%;
+    z-index: 1;
+    width: 200px;
+    margin-bottom: 30px;
+    height: 60%;
+    padding-top: 2px;
+    word-break: break-word;
+}
+.recadotitle {
+    margin-top: 30px;
+    width: 200px;
+    height: 20%;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#cadastrorecado {
+    padding: 50px;
+    max-width: 700px;
+    height: 700px;
+    z-index: 10;
+    background-color: #ffef3e;
+    position: fixed;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+
+.btncadastrar {
+    width: 80%;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+    border: white;
+
+}
+
+.btncadastrar:hover{
+    background-color: rgb(230, 56, 230);
+    cursor: pointer;
+    border: white;
+}
+
+#formcadastro >input, textarea, #login> input {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 20px;
+}
+
+textarea {
+    padding: 15px;
+    width: 80%;
+    height: 350px;
+    opacity: 0.5;
+}
+
+#painel {
+    width: 700px;
+    height: 700px;
+    z-index: 100;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    justify-content: center;
+}
+
+#painel >input, textarea {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 20px;
+}
+
+
+
+#titulopainel {
+    background-color: transparent;
+    height: 10%;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+}
+
+#descpainel {
+    border: none;
+}
+
+#titulopainel:focus, #descpainel:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#titulo {
+    opacity: 0.5;
+    color: black;
+}
+
+#titulo::content {
+    opacity: 1.0;
+}
+
+
+
+#painel::backdrop {
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.343);
+}
+
+#restaurar {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    width: 45px;
+    transition: all 300 ms ease-out;
+}
+
+#restaurar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fundoamarelo{
+    background-color: #ffef3e;
+}
+
+.fundoverde{
+    background-color: rgb(182, 238, 169);
+}
+
+.fundorosa{
+    background-color: rgb(255, 156, 213);
+}
+
+#painel > textarea {
+    background-color: transparent;
+    height: 55%;
+}

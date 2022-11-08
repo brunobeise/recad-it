@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="background" class="container-fluid">
+        <div style="height: 100%;" class="row">
+        <div id="containerrecados" class="col-12 col-lg-11" >
+            a
+        </div>
+        <div id="nav" class="d-flex col-12 col-lg-1 sticky-bottom flex-lg-column ">
+            <i onclick="abrircadastro()" class="bi bi-plus-square"></i>
+            <i onclick="trocarfundo()" class="bi bi-image"></i>
+            <i onclick="encerrarsessão()" class="bi bi-box-arrow-left"></i>
+        </div>
+    </div>
+    </div>
+    
+ 
+ 
+ <div class="container dn" id="cadastrorecado">
+    <form id="formcadastro" action="">
+    <div class="row m-3">
+        <input placeholder="Título do Lembrete" type="text" name="" maxlength="13" id="titulo">
+    </div>
+    <div class="row m-3">
+        <textarea placeholder="Descrição do lembrete"  id="desc" name="descrição" rows="4" cols="50" maxlength="157"></textarea>
+    </div> <br>
+    <div class="row">
+        <div class="col-6">
+            <input style="min-width: 150px;"  class="btncadastrar" type="submit" value="Cadastrar 🧷">
+        </div>
+        <div class="col-6">
+            <input  onclick="fecharcadastro()" style="min-width: 150px;" class="btncadastrar" type="button" value="Cancelar ❌">
+        </div>
+        
+    </form>
+    </div>
+            
+               
+                
+           
+        </form>
+       
+    </div>
+        
+    </form>
+</div>
+<dialog class="container text-center" id="painel" >
+    <div class="row my-3 mx-5"><input style="font-size: 50px;" type="text" name="" maxlength="25" id="titulopainel"></div>
+    <div class="row my-3 mx-5"><textarea style="font-size: 20px;"  id="descpainel" name="descrição" rows="4" cols="50" maxlength="157"></textarea></div>
+    <div class="row my-3 mx-5 text-center"><input id="attbutton" class="btncadastrar" type="submit" value="Aplicar Alterações ✔"></div>
+    <div class="row my-3 mx-5 text-center">
+     <div class="col-6"><input  id="fpainel" onclick="fecharpainel()"  class="btncadastrar" type="button" value="Cancelar ❌"></div>
+     <div class="col-6"><input id="apagarbutton" onclick="fecharpainel() "  class="btncadastrar" type="button" value="Apagar 🚮"></div>   </div>
+</dialog>
+</body>
+</html>
